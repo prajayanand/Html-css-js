@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 3: Nested Tables</title>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid #030303;
+            text-align: center;
+            padding: 5px;
+        }
+        .nested-table td {
+            border: 1px solid #030303;
+            padding: 90px;
+        }
+        img {
+            width: 130px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <a href="https://antra.net/" target="_blank">
+                    <img src="data:image/jpeg;base64,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" alt="Antra">
+                </a>
+            </td>
+            <td>
+                <table class="nested-table">
+                    <tr>
+                        <th>Software</th>
+                    </tr>
+                    <tr>
+                        <th>Developer</th>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
